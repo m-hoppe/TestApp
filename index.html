@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<title>TestApp</title>
+</head>
+<body>
+	<button id="button1">Test</button>
+	<button id="button2">Clear</button>
+	<div id="results"></div>
+
+<script src="js/zepto.js"></script>
+<script src="js/button1.js"></script>
+<script>
+$('#button1').click(function() {
+	BUTTON1.Test($('#results'));
+});
+$('#button2').click(function() {
+	$('#results').html('');
+});
+</script>
+</body>
+</html>
